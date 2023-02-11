@@ -9,7 +9,7 @@ def series(blocks: list[Block]) -> Block:
     
     Arguments
     ----------
-    blocks : Block
+    blocks : list[Block]
         List of blocks to be wired in series
 
     Returns
