@@ -10,7 +10,7 @@ from cadcad.spaces import Bit, EmptySpace, Integer, Real, Space, multiply, space
 # pylint: disable=line-too-long, missing-function-docstring, missing-class-docstring, invalid-name, redefined-outer-name  # noqa: E501
 
 
-@fixture
+@fixture(scope="module")
 def space1() -> type:
     @space
     class Space1:
@@ -20,7 +20,7 @@ def space1() -> type:
     return Space1
 
 
-@fixture
+@fixture(scope="module")
 def space2() -> type:
     @space
     class Space2:
@@ -30,7 +30,7 @@ def space2() -> type:
     return Space2
 
 
-@fixture
+@fixture(scope="module")
 def emptyspace() -> type:
     @space
     class EmptySpace:
